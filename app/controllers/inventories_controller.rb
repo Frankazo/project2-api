@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-class InventoriesController < OpenReadController
-  before_action :set_inventory, only: %i[update destroy]
+class InventoriesController < ProtectedController
+  before_action :set_inventory, only: %i[show update destroy]
 
   # GET /inventories
   def index
@@ -12,12 +12,12 @@ class InventoriesController < OpenReadController
 
   # GET /inventories/1
   def show
-    render json: @inventory
+    render json: Inventory.find(params[:id])
   end
 
   # POST /inventories
   def create
-    @inventory = current_user.inventories.build(inventory_params)
+    @inventory = Item.new(inventory_params)
 
     if @inventory.save
       render json: @inventory, status: :created

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class ItemsController < ApplicationController
+class ItemsController < ProtectedController
   before_action :set_item, only: %i[show update destroy]
 
   # GET /items
@@ -20,7 +20,7 @@ class ItemsController < ApplicationController
     @item = Item.new(item_params)
 
     if @item.save
-      render json: @item, status: :created, location: @item
+      render json: @item, status: :created
     else
       render json: @item.errors, status: :unprocessable_entity
     end
@@ -49,6 +49,6 @@ class ItemsController < ApplicationController
 
   # Only allow a trusted parameter "white list" through.
   def item_params
-    params.require(:item).permit(:name, :quantity)
+    params.require(:item).permit(:name, :quantity, :inventory_id)
   end
 end

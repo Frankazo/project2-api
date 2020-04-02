@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-class InventoriesController < ApplicationController
-  before_action :set_inventory, only: %i[show update destroy]
+class InventoriesController < OpenReadController
+  before_action :set_inventory, only: %i[update destroy]
 
   # GET /inventories
   def index
@@ -17,10 +17,10 @@ class InventoriesController < ApplicationController
 
   # POST /inventories
   def create
-    @inventory = Inventory.new(inventory_params)
+    @inventory = current_user.inventories.build(inventory_params)
 
     if @inventory.save
-      render json: @inventory, status: :created, location: @inventory
+      render json: @inventory, status: :created
     else
       render json: @inventory.errors, status: :unprocessable_entity
     end
@@ -44,7 +44,7 @@ class InventoriesController < ApplicationController
 
   # Use callbacks to share common setup or constraints between actions.
   def set_inventory
-    @inventory = Inventory.find(params[:id])
+    @inventory = current_user.inventories.find(params[:id])
   end
 
   # Only allow a trusted parameter "white list" through.

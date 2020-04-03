@@ -5,14 +5,14 @@ class InventoriesController < ProtectedController
 
   # GET /inventories
   def index
-    @inventories = Inventory.all
+    @inventories = current_user.inventories.all
 
     render json: @inventories
   end
 
   # GET /inventories/1
   def show
-    render json: Inventory.find(params[:id])
+    render json: current_user.inventories.find(params[:id])
   end
 
   # POST /inventories

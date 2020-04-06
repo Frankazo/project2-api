@@ -1,51 +1,92 @@
-# Application for the Second Project: A Description
+Inventory App
+-------------
+CONTENTS OF THIS FILE
+---------------------
 
-This application allows the user to do x, y, and z. Maybe here's a reason why I
-wanted to do this project, or came up with this idea.
+ * Introduction
+ * Wireframes
+ * User Stories
+ * Planning and Development
+ * Future features
+ * Technologies
+ * Creator
 
-## Important Links
+ INTRODUCTION
+ ------------
 
-- [Other Repo](www.link.com)
-- [Deployed API](www.link.com)
-- [Deployed Client](www.link.com)
+  This is the Second project for Software engineering Immersive SEI09.
 
-## Planning Story
 
-Lorem ipsum dolor amet cloud bread letterpress squid actually, single-origin
-coffee williamsburg af poutine fingerstache austin semiotics paleo man braid
-vexillologist. Tumeric literally banjo pickled disrupt cold-pressed thundercats
-shoreditch try-hard health goth intelligentsia pop-up small batch skateboard
-farm-to-table. Meh tofu fam, direct trade tattooed stumptown etsy everyday
-carry activated charcoal. Neutra cornhole polaroid literally salvia, listicle
-tofu.
+  ERD
+  ---
 
-### User Stories
+![EDR](https://i.imgur.com/yJAucB9.png)
 
-- As a user I want to sign in/up
-- As a user I want to Create a new < resource >
-- As a user I want to Read multiple < resources >
-- As a user I want to Read a single < resource >
-- As a user I want to Update a < resource > I own
-- As a user I want to Delete a < resource > I own
+  WIREFRAMES
+  ----------
+  Initial Stage
+  - ![alt text](https://i.imgur.com/pIvQyGz.jpg)
 
-### Technologies Used
+  - Sign In or Sign Up Stage
+  - ![alt text](https://i.imgur.com/x4UaPay.jpg)
 
-- jQuery
-- HTML/CSS
-- Bootstrap
-- Javascript
+  - Placeholder
+  - ![alt text](https://i.imgur.com/xgRVduj.jpg)
 
-### Unsolved Problems
 
-- Still need to ....
-- Would like to eventually ....
+  USER STORIES
+  ------------
 
-## Images
+    - As a user I want to sign in/up, change pass and log out.
+    - As a user I want to Create a new Inventory.
+    - As a user I want to Read multiple Items within an Inventory
+    - As a user I want to Read a single item
+    - As a user I want to Update an Inventory or item I own
+    - As a user I want to Delete an Inventory or item I own
 
-#### Wireframe:
-![wireframe](https://lucidchart.zendesk.com/hc/article_attachments/360001080866/Facebook_Wireframe_-_New_Page.png)
+  PLANING AND DEVELOPMENT
+  -----------------------
+### Set Up
 
----
+  - First the Set up for the API and the client
 
-#### ERD:
-![ERD](h
+  [Api](https://project2-sei09.herokuapp.com/)
+  Deployed using Heroku
+  [Client](https://frankazo.github.io/inventory-app/)
+  Deployed on Github Pages
+
+### API
+  While Plannig for the Inventory App I decided to use Two Main resources
+  Therefore I Scaffold Two resources Inventory and Item
+  Tested all resources end points with curl scripts
+  Updated resource controller to inherit from Protected
+  Tested resources end points with curl scripts
+  Added the relationship to User
+  Added User ownership to resource controller
+
+### Client
+  Develop functionality to Sign Up, Sign In, Change Password, Sign Out.
+  Added success or failure messages.
+  Added Crud request to Create, Show, Delete and Update resources.
+
+### Final Touches
+  README
+  Troubleshoot/Debug
+  Style
+
+  FUTURE FEATURES
+  ---------------
+
+
+  TECHNOLOGIES
+  ------------
+  - API using Ruby on Rails and Postgresql.
+  - Javascript to communicate with API.
+  - jQuery for DOM manipulation and event handling.
+  - Handlebars for view rendering.
+  - HTML and CSS.
+  - Bootstrap for addional Styling.
+
+  CREATOR
+  -------
+  - [Frank Luis-Ravelo](https://www.linkedin.com/in/franklr/)

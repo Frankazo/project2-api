@@ -1,6 +1,7 @@
 API FOR INVENTORY APP InvApp
 ----------------------------
-  Front End[Client](https://github.com/Frankazo/inventory-app)
+### Front End [Client](https://github.com/Frankazo/inventory-app)
+
 CONTENTS OF THIS FILE
 ---------------------
 
@@ -28,13 +29,16 @@ ENTITY RELATIONSHIP DIAGRAM
 WIREFRAMES
 ----------
   Initial Stage
-  - ![alt text](https://i.imgur.com/pIvQyGz.jpg)
 
-  - Sign In or Sign Up Stage
-  - ![alt text](https://i.imgur.com/x4UaPay.jpg)
+<img src="https://i.imgur.com/pIvQyGz.jpg" width="250">
 
-  - Placeholder
-  - ![alt text](https://i.imgur.com/xgRVduj.jpg)
+Sign In or Sign Up Stage
+
+<img src="https://i.imgur.com/x4UaPay.jpg" width="250">
+
+Placeholder
+
+<img src="https://i.imgur.com/xgRVduj.jpg" width="250">
 
 
 USER STORIES

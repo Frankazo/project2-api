@@ -2,6 +2,8 @@ API FOR INVENTORY APP InvApp
 ----------------------------
 ### Front End [Client](https://github.com/Frankazo/inventory-app)
 
+### Back End [API](https://github.com/Frankazo/project2-api)
+
 CONTENTS OF THIS FILE
 ---------------------
 
@@ -28,7 +30,7 @@ ENTITY RELATIONSHIP DIAGRAM
 
 WIREFRAMES
 ----------
-  Initial Stage
+Initial Stage
 
 <img src="https://i.imgur.com/pIvQyGz.jpg" width="250">
 
